@@ -1,0 +1,296 @@
+{
+    "locale": "tr",
+    "name": "Türkçe",
+    "direction": "ltr",
+    "landing": {
+        "welcome": "MAKİNE ÖĞRENMESİ KATALOĞU.",
+        "sub_title": "Başlamak için bir algoritma seçin!",
+        "explore_algorithm": "Algoritmayı Keşfet",
+        "algorithms": {
+            "knn": {
+                "algo_title": "K-En Yakın Komşu (KNN)",
+                "algo_description": "KNN'nin veri noktalarını en yakın komşularına göre nasıl sınıflandırdığını keşfedin"
+            },
+            "decision-tree": {
+                "algo_title": "Karar Ağacı (C4.5 & ID3)",
+                "algo_description": "Karar ağacı sınıflandırması için C4.5 ve ID3 algoritmalarını öğrenin"
+            },
+            "naive-bayes": {
+                "algo_title": "Naive Bayes Sınıflandırıcısı",
+                "algo_description": "Bayes teoremi kullanarak olasılıksal sınıflandırmayı anlayın"
+            }
+        },
+        "developer": "Geliştirici ile İletişime Geç"
+    },
+    "knn_page": {
+        "get_results": "Nihai sonuçları al",
+        "op_type": " İşlem türü:",
+        "result": "Sonuç:",
+        "loading": "Yükleniyor..."
+    },
+    "data_uploader": {
+        "use": "Kullan",
+        "upload_preview": "Yükle ve Önizle",
+        "uploading":"Yükleniyor..."
+    },
+    "data_table": {
+        "no_data": "Gösterilecek veri yok",
+        "data_preview": "Veri Önizlemesi",
+        "show_all": "Tüm satırları göster",
+        "rows_displayed": "satır gösteriliyor"
+    },
+    "knn_algorithm_config": {
+        "select_target": "Bir hedef sütunu seçin (genellikle son sütundur):",
+        "selected_column": "Seçilen hedef sütun:",
+        "enter_input": "Bir gözlem girin:",
+        "or_geenrate_one": "Ya da bir tane oluştur:",
+        "generate_input": "Gözlem Oluştur",
+        "saved_input": "Kaydedilen Gözlem:"
+    },
+    "knn_how_it_works": {
+        "steps": [
+            {
+                "title": "Başla",
+                "description": "Sınıflandırılacak yeni bir nokta ve etiketli bir veri kümesi ile başlayın",
+                "id": "step1"
+            },
+            {
+                "title": "Mesafeleri Hesapla",
+                "description": "Girdi noktasından veri kümesindeki her noktaya Öklid mesafesini hesaplayın",
+                "id": "step2"
+            },
+            {
+                "title": "Mesafeye Göre Sırala",
+                "description": "Tüm noktaları girdi noktasına olan mesafelerine göre sıralayın",
+                "id": "step3"
+            },
+            {
+                "title": "K Komşu Seç",
+                "description": "En yakın komşuları seçin",
+                "id": "step4"
+            },
+            {
+                "title": "Tahmin Yap",
+                "description": "Sınıflandırma için: çoğunluk oyu. Regresyon için: ortalama",
+                "id": "step5"
+            }
+        ],
+        "title": "KNN Nasıl Çalışır?",
+        "collapse": "Daralt",
+        "expand": "Genişlet",
+        "playing": "Oynatılıyor...",
+        "play_demo": "Demoyu Oynat",
+        "reset": "Sıfırla",
+        "data_vis": "Veri Görselleştirme",
+        "algorithm_details": "Algoritma Detayları",
+        "details_placeholder": "Detaylar demo sırasında gösterilecektir.",
+        "distance_calc": "Mesafe Hesaplamaları",
+        "distance_formula": "Öklid Mesafe Formülü:",
+        "sorted_by_distance": "Mesafeye Göre Sıralı",
+        "nearest_neighbors": "En Yakın Komşular",
+        "classification_results": "Sınıflandırma Sonucu:",
+        "vote_count": "Oy Sayısı:",
+        "class_word": "Sınıf",
+        "vote_word": "oy",
+        "predicted_class": "Tahmin Edilen Sınıf:",
+        "core_algorithm_steps": "Temel Algoritma Adımları",
+        "knn_algorithm": "# KNN Algoritması Uygulaması"
+    },
+    "dt_page": {
+        "get_results": "Nihai sonuçları al",
+        "loading": "Yükleniyor...",
+        "view_json": "Çıktıyı JSON formatında görüntüle"
+    },
+    "dt_how_it_works": {
+        "steps": [
+            {
+                "title": "Hedef Entropisini Hesapla",
+                "description": "Hedef değişkenin (Tenis Oyna) entropisini hesapla",
+                "id": "step1"
+            },
+            {
+                "title": "Bilgi Kazancını Hesapla",
+                "description": "Her özellik için bilgi kazancını hesapla ve en iyi bölünmeyi bul",
+                "id": "step2"
+            },
+            {
+                "title": "Kök Seç",
+                "description": "En yüksek bilgi kazancına sahip özelliği kök olarak seç",
+                "id": "step3"
+            },
+            {
+                "title": "Veri Kümesini Böl",
+                "description": "Seçilen özelliğin değerlerine göre alt kümeler oluştur",
+                "id": "step4"
+            },
+            {
+                "title": "Özyinelemeli İnşa Et",
+                "description": "Her alt küme için süreci tekrar et, yaprak düğümlere ulaşılana kadar",
+                "id": "step5"
+            }
+        ],
+        "title": "Karar Ağacı Nasıl Çalışır?",
+        "collapse": "Daralt",
+        "expand": "Genişlet",
+        "playing": "Oynatılıyor...",
+        "play_demo": "Demoyu Oynat",
+        "reset": "Sıfırla",
+        "dataset_and_calcs": "Veri Kümesi ve Hesaplamalar",
+        "sample_data": "Örnek Veri Kümesi (Tenis Oyna)",
+        "target_entropy": "Hedef Entropisi",
+        "entropy_formula": "Entropi Formülü:",
+        "IG": "Bilgi Kazancı",
+        "dt_structure": "Karar Ağacı Yapısı",
+        "tree_structure_placeholder": "Ağaç, 2. adımdan sonra görünecektir",
+        "click_for_details": "Detayları görmek için düğümlere tıklayın",
+        "dt_process": "Karar Ağacı İnşa Süreci",
+        "algorithm_steps": "# Karar Ağacı Algoritması (C4.5)",
+        "entropy": {
+            "title": "Entropi",
+            "definition": "Veri kümesindeki düzensizliği ölçer. Daha düşük entropi = daha homojen veri."
+        },
+        "information_gain": {
+            "title": "Bilgi Kazancı",
+            "definition": "Bir özellik üzerine bölündüğünde entropideki azalmayı ölçer. Daha yüksek kazanç = daha iyi bölünme."
+        },
+        "recursive_building": {
+            "title": "Özyinelemeli İnşa",
+            "definition": "Her alt kümede süreç özyinelemeli olarak devam eder ve saf alt kümelere ulaşıldığında sona erer."
+        }
+    },
+    "decision_tree_visualizer": {
+        "tree_placeholder": "Ağaç verisi sağlanmadı",
+        "prediction": "Tahmin",
+        "feature": "Özellik",
+        "expand_all": "Tümünü Genişlet",
+        "collapse_all": "Tümünü Daralt",
+        "feature_node": "Özellik Düğümü",
+        "condition": "Koşul",
+        "positive": "Pozitif",
+        "negative": "Negatif"
+    },
+    "dt_algorithm_config": {
+        "select_target": "Bir hedef sütunu seçin (genellikle son sütundur):",
+        "selected_column": "Seçilen hedef sütun:"
+    },
+    "naive_bayes_page": {
+        "get_results": "Nihai sonuçları al",
+        "loading": "Yükleniyor...",
+        "classification_results": "Sınıflandırma Sonucu:",
+        "probs": "Olasılıklar:"
+    },
+    "naive_bayes_algorithm_config": {
+        "select_target": "Bir hedef sütunu seçin (genellikle son sütundur):",
+        "selected_column": "Seçilen hedef sütun:",
+        "enter_input": "Bir gözlem girin:",
+        "or_geenrate_one": "Ya da bir tane oluştur:",
+        "generate_input": "Gözlem Oluştur",
+        "saved_input": "Kaydedilen Gözlem:"
+    },
+    "naive_bayes_how_it_works": {
+        "steps": [
+            {
+                "id": "1",
+                "key": "step1",
+                "title": "Eğitim Verilerini Yükle",
+                "description": "Özellikler ve hedef sınıflar içeren bir veri kümesiyle başlayın",
+                "details": "Algoritma, eğitim veri kümesini yükleyerek başlar. Her satır bir özellik ve hedef sınıf içerir."
+            },
+            {
+                "id": "2",
+                "key": "step2",
+                "title": "Sınıf Olasılıklarını Hesapla",
+                "description": "Her hedef sınıf için P(class) - önsel olasılığı hesapla",
+                "details": "Her sınıfın veri kümesinde kaç kez geçtiğini sayın ve olasılıklarını hesaplayın."
+            },
+            {
+                "id": "3",
+                "key": "step3",
+                "title": "Özellik Olasılıklarını Hesapla",
+                "description": "Her özellik-sınıf kombinasyonu için P(feature|class) hesapla",
+                "details": "Her özellik değeri için, her sınıfa göre olasılığı frekans sayımıyla hesaplayın."
+            },
+            {
+                "id": "4",
+                "key": "step4",
+                "title": "Naive Bayes Formülünü Uygula",
+                "description": "Yeni örnek için Bayes teoremi kullanarak P(class|features) hesapla",
+                "details": "Her sınıf için önsel olasılığı, özellik olasılıklarıyla çarpın."
+            },
+            {
+                "id": "5",
+                "key": "step5",
+                "title": "Tahmin Yap",
+                "description": "En yüksek olasılığa sahip sınıfı seçin",
+                "details": "Tüm olasılıkları karşılaştırın ve en yüksek değere sahip sınıfı seçin."
+            }
+        ],
+        "title": "Naive Bayes Sınıflandırması Nasıl Çalışır?",
+        "playing": "Oynatılıyor...",
+        "play_demo": "Demoyu Oynat",
+        "reset": "Sıfırla",
+        "step": "Adım",
+        "explanation": "Açıklama",
+        "class_distribution": "Sınıf Dağılımı",
+        "final_prediction": "Nihai Tahmin",
+        "prediction": "Tahmin:",
+        "code_ref": "Kod Referansı",
+        "sample_data": "Örnek Eğitim Verisi",
+        "test_instance": "Test Örneği",
+        "algorithm_objective": "→ Algoritma bu koşullara göre tenis oynanıp oynanmayacağını tahmin edecektir",
+        "final_prediction_probs": "Nihai Tahmin Olasılıkları",
+        "probability_distribution": "Olasılık Dağılımı",
+        "visual_distribution": "Görsel Dağılım",
+        "calculation_breakdown": "Hesaplama Detayı",
+        "after_normalization": "Normalize edildikten sonra:"
+    },
+    "naive_bayes_visualizer": {
+        "no_data": "Görselleştirilecek veri yok",
+        "results_visualization": "Sonuçların Görselleştirilmesi",
+        "predicted_class": "Tahmin Edilen Sınıf",
+        "probability_distribution": "Olasılık Dağılımı",
+        "summary": "Özet",
+        "total_classes": "Toplam Sınıf:",
+        "confidence": "Güven:"
+    },
+    "navigation": [
+        {
+            "title": "Ana Sayfa",
+            "href": "#",
+            "icon": "home"
+        },
+        {
+            "title": "Knn",
+            "href": "algorithms/knn",
+            "icon": "knn"
+        },
+        {
+            "title": "Decision Tree",
+            "href": "algorithms/decision-tree",
+            "icon": "decision-tree"
+        },
+        {
+            "title": "Naive Bayes",
+            "href": "algorithms/naive-bayes",
+            "icon": "naive-bayes"
+        },
+        {
+            "title": "Geliştirici",
+            "href": "/contact",
+            "icon": "contact"
+        }
+    ],
+    "errors": {
+        "arguments_not_set": "Gerekli parametreler (veri dosyası, hedef sütun) henüz ayarlanmadı.",
+        "request_failed": "İstek şu durumla başarısız oldu",
+        "processing_error": "Veriler işlenirken bir hata oluştu.",
+        "review_inputs": "Lütfen seçimlerinizi ve girişlerinizi gözden geçirin.",
+        "complete_input": "Lütfen girişi tamamlayın.",
+        "upload_csv_error":"Dosya yüklenemedi, Lütfen CSV formatında bir dosya yükleyin.",
+        "input_generation_failed":"Bir gözlem oluşturmak için gerekli veri bulunmamaktadır.",
+        "error": "Hata:",
+        "data_uploader_errors": {
+            "file_load_error": "Örnek dosya yüklenemedi."
+        }
+    }
+}

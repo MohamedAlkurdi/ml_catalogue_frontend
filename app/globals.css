@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+:root {
+  /* Light Theme Palette */
+  --color-bg: #f8fafc;
+  --color-text: #1e293b;
+  --color-secondary: #64748b;
+  --color-btn: #059669;
+  --ring-color: rgb(5, 150, 105, 0.4);
+  --color-card: #ffffff;
+  --light-btn-color: #d4f4ea;
+
+  /* Shared Variables */
+  --radius-full: 9999px;
+  --gap: 1rem;
+  --transition-fast: 150ms;
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  --color-bg: #0a0e1a;
+  --color-text: #e2e8f0;
+  --color-secondary: #64748b;
+  --color-btn: #3b82f6;
+  --ring-color: rgb(59, 130, 246, 0.4);
+  --color-card: #1e293b;
+  --light-btn-color: #ccdbf1;
+
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+/* Utility Classes */
+.container-center {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  gap: var(--gap);
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+/* Button Primitives */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-btn);
+  color: var(--color-bg);
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  border: 0;
+  cursor: pointer;
+  transition: transform 120ms var(--transition-fast), filter var(--transition-fast), background var(--transition-fast);
+  font-weight: 600;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.08);
+  outline-offset: 2px;
+}
+
+/* Background and Text Utilities */
+.bg-primary {
+  background-color: var(--color-bg);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.text-secondary {
+  color: var(--color-bg);
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+.text-primary {
+  color: var(--color-text);
+}
+
+.card-bg {
+  background-color: var(--color-card);
+}
+
+.btn-color {
+  background-color: var(--color-btn);
+}
+
+.light-btn-bg {
+  background-color: var(--light-btn-color);
+}
+
+.custom-ring {
+  box-shadow: 0 0 0 4px var(--ring-color);
+
+}
+
+.naive-bayes-active-step {
+  border: 2px solid var(--color-btn);
+  background-color: var(--light-btn-color);
+}
+
+.side-nav-item:hover {
+  background-color: var(--color-btn);
+  color: var(--color-bg)
+}
+
+.text-light {
+  color: var(--color-btn);
+}
+
+/* Responsive improvements */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Better mobile table handling */
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Improve text readability on mobile */
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  /* Better spacing for mobile */
+  .space-y-3>*+* {
+    margin-top: 0.75rem;
+  }
+
+  .space-y-4>*+* {
+    margin-top: 1rem;
+  }
+
+  .space-y-6>*+* {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Tablet improvements */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1025px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

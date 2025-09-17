@@ -1,0 +1,296 @@
+{
+    "locale": "ar",
+    "name": "English",
+    "direction": "rtl",
+    "landing": {
+        "welcome": "THE ML CATALOGUE.",
+        "sub_title": "Select an algorithm to start!",
+        "explore_algorithm": "Explore Algorithm",
+        "algorithms": {
+            "knn": {
+                "algo_title": "K-Nearest Neighbor (KNN)",
+                "algo_description": "Discover how KNN classifies data points based on their nearest neighbors"
+            },
+            "decision-tree": {
+                "algo_title": "Decision Tree (4.5C & ID3)",
+                "algo_description": "Learn about C4.5 and ID3 algorithms for decision tree classification"
+            },
+            "naive-bayes": {
+                "algo_title": "Naive Bayes Classifier",
+                "algo_description": "Understand probabilistic classification using Bayes theorem"
+            }
+        },
+        "developer": "Contact Developer"
+    },
+    "knn_page": {
+        "get_results": "Get final results",
+        "op_type": " Operation type:",
+        "result": "Result:",
+        "loading": "Loading..."
+    },
+    "data_uploader": {
+        "use": "Use",
+        "upload_preview": "Upload & Preview",
+        "uploading":"Uploading..."
+    },
+    "data_table": {
+        "no_data": "No data to display",
+        "data_preview": "Data Preview",
+        "show_all": "Show all rows",
+        "rows_displayed": "rows displayed"
+    },
+    "knn_algorithm_config": {
+        "select_target": "Select a target column (usually it is the last one):",
+        "selected_column": "Selected target column is:",
+        "enter_input": "Enter an input:",
+        "or_geenrate_one": "Or Generate One:",
+        "generate_input": "Generate Input",
+        "saved_input": "Saved Input:"
+    },
+    "knn_how_it_works": {
+        "steps": [
+            {
+                "title": "Begin",
+                "description": "Start with a new point to classify and a dataset of labeled points",
+                "id": "step1"
+            },
+            {
+                "title": "Calculate Distances",
+                "description": "Compute Euclidean distance from input point to each dataset point",
+                "id": "step2"
+            },
+            {
+                "title": "Sort by Distance",
+                "description": "Sort all points by their distance to the input point",
+                "id": "step3"
+            },
+            {
+                "title": "Select K Neighbors",
+                "description": "Choose the closest neighbors",
+                "id": "step4"
+            },
+            {
+                "title": "Make Prediction",
+                "description": "For classification: majority vote. For regression: average",
+                "id": "step5"
+            }
+        ],
+        "title": "How KNN Works?",
+        "collapse": "Collapse",
+        "expand": "Expand",
+        "playing": "Playing...",
+        "play_demo": "Play Demo",
+        "reset": "Reset",
+        "data_vis": "Data Visualization",
+        "algorithm_details": "Algorithm Details",
+        "details_placeholder": "Details will be displayed while playing the demo.",
+        "distance_calc": "Distance Calculations",
+        "distance_formula": "Euclidean Distance Formula:",
+        "sorted_by_distance": "Sorted by Distance",
+        "nearest_neighbors": "Nearest Neighbors",
+        "classification_results": "Classification Result:",
+        "vote_count": "Vote Count:",
+        "class_word": "Class",
+        "vote_word": "vote",
+        "predicted_class": "Predicted Class: ",
+        "core_algorithm_steps": "Core Algorithm Steps",
+        "knn_algorithm": "# KNN Algorithm Implementation"
+    },
+    "dt_page": {
+        "get_results": "Get final results",
+        "loading": "Loading...",
+        "view_json": "View output in JSON format"
+    },
+    "dt_how_it_works": {
+        "steps": [
+            {
+                "title": "Calculate Target Entropy",
+                "description": "Calculate the entropy of the target variable (Play Tennis)",
+                "id": "step1"
+            },
+            {
+                "title": "Calculate Information Gain",
+                "description": "For each feature, calculate information gain to find the best split",
+                "id": "step2"
+            },
+            {
+                "title": "Select Root",
+                "description": "Choose the feature with highest information gain as root",
+                "id": "step3"
+            },
+            {
+                "title": "Split Dataset",
+                "description": "Create subsets based on the selected feature's values",
+                "id": "step4"
+            },
+            {
+                "title": "Build Recursively",
+                "description": "Repeat the process for each subset until leaf nodes are reached",
+                "id": "step5"
+            }
+        ],
+        "title": "How Decision Tree Works?",
+        "collapse": "Collapse",
+        "expand": "Expand",
+        "playing": "Playing...",
+        "play_demo": "Play Demo",
+        "reset": "Reset",
+        "dataset_and_calcs": "Dataset & Calculations",
+        "sample_data": "Sample Dataset (Play Tennis)",
+        "target_entropy": "Target Entropy",
+        "entropy_formula": "Entropy Formula:",
+        "IG": "Information Gain",
+        "dt_structure": "Decision Tree Structure",
+        "tree_structure_placeholder": "Tree will appear after step 2",
+        "click_for_details": "Click on tree nodes to see details",
+        "dt_process": "Decision Tree Building Process",
+        "algorithm_steps": "# Decision Tree Algorithm (C4.5)",
+        "entropy": {
+            "title": "Entropy",
+            "definition": "Measures impurity/disorder in the dataset. Lower entropy means more homogeneous data."
+        },
+        "information_gain": {
+            "title": "Information Gain",
+            "definition": "Measures how much entropy decreases after splitting on a feature. Higher gain = better split."
+        },
+        "recursive_building": {
+            "title": "Information Gain",
+            "definition": "Process continues recursively on each subset until leaf nodes (pure subsets) are reached."
+        }
+    },
+    "decision_tree_visualizer": {
+        "tree_placeholder": "No tree data provided",
+        "prediction": "Prediction",
+        "feature": "Feature",
+        "expand_all": "Expand All",
+        "collapse_all": "Collapse All",
+        "feature_node": "Feature Node",
+        "condition": "Condition",
+        "positive": "Positive",
+        "negative": "Negative"
+    },
+    "dt_algorithm_config": {
+        "select_target": "Select a target column (usually it is the last one):",
+        "selected_column": "Selected target column is:"
+    },
+    "naive_bayes_page": {
+        "get_results": "Get final results",
+        "loading": "Loading...",
+        "classification_results": "Classification Result:",
+        "probs": "Probabilities:"
+    },
+    "naive_bayes_algorithm_config": {
+        "select_target": "Select a target column (usually it is the last one):",
+        "selected_column": "Selected target column is:",
+        "enter_input": "Enter an input:",
+        "or_geenrate_one": "Or Generate One:",
+        "generate_input": "Generate Input",
+        "saved_input": "Saved Input:"
+    },
+    "naive_bayes_how_it_works": {
+        "steps": [
+            {
+                "id": "1",
+                "key": "step1",
+                "title": "Load Training Data",
+                "description": "Start with a dataset containing features and target classes",
+                "details": "The algorithm begins by loading the training dataset. Each row represents an example with features and a target class."
+            },
+            {
+                "id": "2",
+                "key": "step2",
+                "title": "Calculate Class Probabilities",
+                "description": "Calculate P(class) - the prior probability of each target class",
+                "details": "Count how often each class appears in the dataset and calculate probabilities."
+            },
+            {
+                "id": "3",
+                "key": "step3",
+                "title": "Calculate Feature Probabilities",
+                "description": "Calculate P(feature|class) for each feature-class combination",
+                "details": "For each feature value, calculate the probability given each class using frequency counting."
+            },
+            {
+                "id": "4",
+                "key": "step4",
+                "title": "Apply Naive Bayes Formula",
+                "description": "For new instance, calculate P(class|features) using Bayes theorem",
+                "details": "Multiply prior probability with all feature probabilities for each class."
+            },
+            {
+                "id": "5",
+                "key": "step5",
+                "title": "Make Prediction",
+                "description": "Choose the class with highest probability",
+                "details": "Compare all calculated probabilities and select the class with the maximum value."
+            }
+        ],
+        "title": "How Naive Bayes Classification Works",
+        "playing": "Playing...",
+        "play_demo": "Play Demo",
+        "reset": "Reset",
+        "step": "Step",
+        "explanation": "Explanation",
+        "class_distribution": "Class Distribution",
+        "final_prediction": "Final Prediction",
+        "prediction": "Prediction:",
+        "code_ref": "Code Reference",
+        "sample_data": "Sample Training Data",
+        "test_instance": "Test Instance",
+        "algorithm_objective": "→ The algorithm will predict whether to play tennis based on these conditions",
+        "final_prediction_probs": "Final Prediction Probabilities",
+        "probability_distribution": "Probability Distribution",
+        "visual_distribution": "Visual Distribution",
+        "calculation_breakdown": "Calculation Breakdown",
+        "after_normalization": "After normalization:"
+    },
+    "naive_bayes_visualizer": {
+        "no_data": "No data to visualize",
+        "results_visualization": "Results Visualization",
+        "predicted_class": "Predicted Class",
+        "probability_distribution": "Probability Distribution",
+        "summary": "Summary",
+        "total_classes": "Total Classes:",
+        "confidence": "Confidence:"
+    },
+    "navigation": [
+        {
+            "title": "Home",
+            "href": "#",
+            "icon": "home"
+        },
+        {
+            "title": "Knn",
+            "href": "algorithms/knn",
+            "icon": "knn"
+        },
+        {
+            "title": "Decision Tree",
+            "href": "algorithms/decision-tree",
+            "icon": "decision-tree"
+        },
+        {
+            "title": "Naive Bayes",
+            "href": "algorithms/naive-bayes",
+            "icon": "naive-bayes"
+        },
+        {
+            "title": "Developer",
+            "href": "/contact",
+            "icon": "contact"
+        }
+    ],
+    "errors": {
+        "arguments_not_set": "The required arguments (data file, target column) are not set yet.",
+        "request_failed": "Request failed with status",
+        "processing_error": "An error occured while processing the data.",
+        "review_inputs": "Please review your selections and inputs.",
+        "complete_input": "Complete the input please.",
+        "upload_csv_error":"No file uploaded. Please upload a CSV file.",
+        "input_generation_failed":"No data available to generate input.",
+        "error": "Error:",
+        "data_uploader_errors": {
+            "file_load_error": "Failed to load example file."
+        }
+    }
+}

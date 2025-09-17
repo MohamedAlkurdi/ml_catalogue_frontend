@@ -1,0 +1,296 @@
+{
+    "locale": "ar",
+    "name": "العربية",
+    "direction": "rtl",
+    "landing": {
+        "welcome": "دليل خوارزميات التعلم الآلي.",
+        "sub_title": "اختر خوارزمية للبدء!",
+        "explore_algorithm": "استكشف الخوارزمية",
+        "algorithms": {
+            "knn": {
+                "algo_title": "K-Nearest Neighbor (KNN)",
+                "algo_description": "اكتشف كيف يصنف KNN النقاط بناءً على أقرب جيران لها"
+            },
+            "decision-tree": {
+                "algo_title": "Decision Tree (4.5C & ID3)",
+                "algo_description": "تعرف على خوارزميات C4.5 و ID3 لتصنيف شجرة القرار"
+            },
+            "naive-bayes": {
+                "algo_title": "Naive Bayes Classifier",
+                "algo_description": "افهم التصنيف الاحتمالي باستخدام مبرهنة بايز"
+            }
+        },
+        "developer": "تواصل مع المطور"
+    },
+    "knn_page": {
+        "get_results": "احصل على النتائج النهائية",
+        "op_type": " نوع العملية:",
+        "result": "النتيجة:",
+        "loading": "جاري التحميل..."
+    },
+    "data_uploader": {
+        "use": "استخدم",
+        "upload_preview": "تحميل ومعاينة",
+        "uploading":"جاري التحميل ..."
+    },
+    "data_table": {
+        "no_data": "لا توجد بيانات للعرض",
+        "data_preview": "معاينة البيانات",
+        "show_all": "عرض كل الصفوف",
+        "rows_displayed": "صفوف معروضة"
+    },
+    "knn_algorithm_config": {
+        "select_target": "اختر العمود الهدف (عادةً يكون الأخير):",
+        "selected_column": "الهدف المحدد هو:",
+        "enter_input": "أدخل مثالاًً:",
+        "or_geenrate_one": "أو أنشئ واحداً:",
+        "generate_input": "توليد مثال",
+        "saved_input": "المثال المحفوظ:"
+    },
+    "knn_how_it_works": {
+        "steps": [
+            {
+                "title": "ابدأ",
+                "description": "ابدأ بنقطة جديدة للتصنيف ومجموعة بيانات تحتوي نقاطاً معنونة",
+                "id": "step1"
+            },
+            {
+                "title": "احسب المسافات",
+                "description": "احسب المسافة الإقليدية بين نقطة الإدخال وكل نقطة في مجموعة البيانات",
+                "id": "step2"
+            },
+            {
+                "title": "رتب حسب المسافة",
+                "description": "رتب جميع النقاط بناءً على بعدها عن نقطة الإدخال",
+                "id": "step3"
+            },
+            {
+                "title": "اختر K من الجيران",
+                "description": "اختر أقرب الجيران",
+                "id": "step4"
+            },
+            {
+                "title": "قم بالتنبؤ",
+                "description": "للتصنيف: التصويت بالأغلبية. للانحدار: المتوسط",
+                "id": "step5"
+            }
+        ],
+        "title": "كيف تعمل خوارزمية KNN؟",
+        "collapse": "إغلاق",
+        "expand": "توسيع",
+        "playing": "جاري التشغيل...",
+        "play_demo": "تشغيل العرض",
+        "reset": "إعادة تعيين",
+        "data_vis": "تصور البيانات",
+        "algorithm_details": "تفاصيل الخوارزمية",
+        "details_placeholder": "سيتم عرض التفاصيل أثناء تشغيل العرض.",
+        "distance_calc": "حسابات المسافة",
+        "distance_formula": "معادلة المسافة الإقليدية:",
+        "sorted_by_distance": "ترتيب النقاط حسب القرب من الهدف",
+        "nearest_neighbors": "أقرب الجيران",
+        "classification_results": "نتيجة التصنيف:",
+        "vote_count": "عدد الأصوات:",
+        "class_word": "Class",
+        "vote_word": "vote",
+        "predicted_class": "الفئة المتنبأ بها:",
+        "core_algorithm_steps": "خطوات الخوارزمية الأساسية",
+        "knn_algorithm": "# تنفيذ خوارزمية KNN"
+    },
+    "dt_page": {
+        "get_results": "احصل على النتائج النهائية",
+        "loading": "جاري التحميل...",
+        "view_json": "عرض المخرجات بصيغة JSON"
+    },
+    "dt_how_it_works": {
+        "steps": [
+            {
+                "title": "احسب فوضوية الهدف",
+                "description": "احسب مدى فوضوية الهدف (لعب التنس في مثالنا)",
+                "id": "step1"
+            },
+            {
+                "title": "احسب فائدة الهدف",
+                "description": "احسب مقدار الفائدة في كل عمود (ميزة) لإيجاد أفضل تقسيم",
+                "id": "step2"
+            },
+            {
+                "title": "اختر الجذر",
+                "description": "اختر الميزة ذات القدر الأكثر فائدة وحددها كجذر",
+                "id": "step3"
+            },
+            {
+                "title": "قسّم مجموعة البيانات",
+                "description": "أنشئ مجموعات فرعية بناءً على قيم الميزة المحددة",
+                "id": "step4"
+            },
+            {
+                "title": "ابنِ بشكل متكرر",
+                "description": "كرر العملية لكل مجموعة فرعية حتى تصل إلى النتائج النهائية (أوراق الشجرة) ",
+                "id": "step5"
+            }
+        ],
+        "title": "كيف تعمل خوارزمية Decision Tree؟",
+        "collapse": "إغلاق",
+        "expand": "توسيع",
+        "playing": "جاري التشغيل...",
+        "play_demo": "تشغيل العرض",
+        "reset": "إعادة تعيين",
+        "dataset_and_calcs": "مجموعة البيانات والحسابات",
+        "sample_data": "مجموعة بيانات تجريبية (لعب التنس)",
+        "target_entropy": "فوضوية الهدف",
+        "entropy_formula": "معادلة حساب الفوضى:",
+        "IG": "مقدار الفائدة",
+        "dt_structure": "هيكل شجرة القرار",
+        "tree_structure_placeholder": "ستظهر الشجرة بعد الخطوة 2",
+        "click_for_details": "انقر على عقد الشجرة لرؤية التفاصيل",
+        "dt_process": "عملية بناء شجرة القرار",
+        "algorithm_steps": "# خوارزمية شجرة القرار (C4.5)",
+        "entropy": {
+            "title": "الفوضوية",
+            "definition": "تقيس مقدار الفوضى/عدم التجانس في مجموعة البيانات. كلما كانت أقل، كانت البيانات أكثر تجانساً."
+        },
+        "information_gain": {
+            "title": "مقدار الفائدة",
+            "definition": "يقيس مقدار الانخفاض في الفوضوية بعد التقسيم على ميزة معينة. كلما كان مقدار الفائدة أعلى = تقسيم أفضل."
+        },
+        "recursive_building": {
+            "title": "البناء التكراري",
+            "definition": "تستمر العملية بشكل متكرر لكل مجموعة فرعية حتى الوصول إلى النتائج النهائية (مجموعات نقية)."
+        }
+    },
+    "decision_tree_visualizer": {
+        "tree_placeholder": "لم يتم توفير بيانات شجرة",
+        "prediction": "التنبؤ",
+        "feature": "الميزة",
+        "expand_all": "توسيع الكل",
+        "collapse_all": "إغلاق الكل",
+        "feature_node": "عقدة الميزة",
+        "condition": "الشرط",
+        "positive": "إيجابي",
+        "negative": "سلبي"
+    },
+    "dt_algorithm_config": {
+        "select_target": "اختر العمود الهدف (عادةً يكون الأخير):",
+        "selected_column": "العمود الهدف المحدد هو:"
+    },
+    "naive_bayes_page": {
+        "get_results": "احصل على النتائج النهائية",
+        "loading": "جاري التحميل...",
+        "classification_results": "نتيجة التصنيف:",
+        "probs": "الاحتمالات:"
+    },
+    "naive_bayes_algorithm_config": {
+        "select_target": "اختر العمود الهدف (عادةً يكون الأخير):",
+        "selected_column": "العمود الهدف المحدد هو:",
+        "enter_input": "أدخل مثالاً:",
+        "or_geenrate_one": "أو أنشئ واحداً:",
+        "generate_input": "توليد مثال",
+        "saved_input": "الإدخال المحفوظ:"
+    },
+    "naive_bayes_how_it_works": {
+        "steps": [
+            {
+                "id": "1",
+                "key": "step1",
+                "title": "تحميل بيانات التدريب",
+                "description": "ابدأ بمجموعة بيانات تحتوي ميزات وفئات هدف",
+                "details": "تبدأ الخوارزمية بتحميل بيانات التدريب. كل صف يمثل مثالاً بميزات وفئة هدف."
+            },
+            {
+                "id": "2",
+                "key": "step2",
+                "title": "احسب احتمالات الفئات",
+                "description": "احسب P(class) - الاحتمال المسبق لكل فئة هدف",
+                "details": "عد عدد مرات ظهور كل فئة في مجموعة البيانات واحسب الاحتمالات."
+            },
+            {
+                "id": "3",
+                "key": "step3",
+                "title": "احسب احتمالات الميزات",
+                "description": "احسب P(feature|class) لكل مزيج من ميزة وفئة",
+                "details": "لكل قيمة ميزة، احسب الاحتمال المعطى لكل فئة باستخدام العد التكراري."
+            },
+            {
+                "id": "4",
+                "key": "step4",
+                "title": "تطبيق معادلة naive bayes",
+                "description": "لمثال جديد، احسب P(class|features) باستخدام مبرهنة naive bayes",
+                "details": "اضرب الاحتمال المسبق بجميع احتمالات الميزات لكل فئة."
+            },
+            {
+                "id": "5",
+                "key": "step5",
+                "title": "قم بالتنبؤ",
+                "description": "اختر الفئة ذات الاحتمال الأعلى",
+                "details": "قارن جميع الاحتمالات المحسوبة واختر الفئة ذات القيمة الأكبر."
+            }
+        ],
+        "title": "كيف تعمل خوارزمية Naive Bayes Classification؟",
+        "playing": "جاري التشغيل...",
+        "play_demo": "تشغيل العرض",
+        "reset": "إعادة تعيين",
+        "step": "خطوة",
+        "explanation": "الشرح",
+        "class_distribution": "توزيع الفئات",
+        "final_prediction": "التنبؤ النهائي",
+        "prediction": "التنبؤ:",
+        "code_ref": "مرجع الكود",
+        "sample_data": "بيانات تدريب تجريبية",
+        "test_instance": "عينة اختبار",
+        "algorithm_objective": "→ ستتنبأ الخوارزمية بما إذا كان يجب لعب التنس بناءً على هذه الشروط",
+        "final_prediction_probs": "احتمالات التنبؤ النهائي",
+        "probability_distribution": "توزيع الاحتمالات",
+        "visual_distribution": "التوزيع البصري",
+        "calculation_breakdown": "تفصيل الحسابات",
+        "after_normalization": "بعد التطبيع:"
+    },
+    "naive_bayes_visualizer": {
+        "no_data": "لا توجد بيانات لعرضها",
+        "results_visualization": "تصور النتائج",
+        "predicted_class": "الفئة المتنبأ بها",
+        "probability_distribution": "توزيع الاحتمالات",
+        "summary": "الملخص",
+        "total_classes": "إجمالي الفئات:",
+        "confidence": "الثقة:"
+    },
+    "navigation":[
+        {
+            "title": "الصفحة الرئيسية",
+            "href": "#",
+            "icon": "home"
+        },
+        {
+            "title": "Knn",
+            "href": "algorithms/knn",
+            "icon": "knn"
+        },
+        {
+            "title": "Decision Tree",
+            "href": "algorithms/decision-tree",
+            "icon": "decision-tree"
+        },
+        {
+            "title": "Naive Bayes",
+            "href": "algorithms/naive-bayes",
+            "icon": "naive-bayes"
+        },
+        {
+            "title": "المطور",
+            "href": "/contact",
+            "icon": "contact"
+        }
+    ],
+    "errors": {
+        "arguments_not_set": "لم يتم تعيين المدخلات المطلوبة (ملف البيانات، العمود الهدف) بعد.",
+        "request_failed": "فشل الطلب",
+        "processing_error": "حدث خطأ أثناء معالجة البيانات.",
+        "review_inputs": "يرجى مراجعة اختياراتك ومدخلاتك.",
+        "complete_input": "يرجى استكمال الإدخال.",
+        "upload_csv_error":"لم يتم تحميل أي ملف، قم بتحميل ملف بصيغة CSV.",
+        "input_generation_failed":"لا يوجد بيانات كافية لوليد مثال.",
+        "error": "خطأ:",
+        "data_uploader_errors": {
+            "file_load_error": "فشل تحميل الملف التجريبي."
+        }
+    }
+}

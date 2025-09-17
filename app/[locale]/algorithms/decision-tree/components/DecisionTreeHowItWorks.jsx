@@ -426,8 +426,8 @@ const DecisionTreeHowItWorks = () => {
 
                 <div className="mt-6 sm:mt-8 btn-color p-4 sm:p-6 rounded-lg">
                     <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-secondary">{dt_process}</h3>
-                    <div className="bg-gray-900 text-green-400 p-3 sm:p-4 rounded font-mono text-xs sm:text-sm overflow-x-auto">
-                        <div className="mb-2">{algorithm_steps}</div>
+                    <div className="bg-gray-900 text-green-400 p-3 sm:p-4 rounded font-mono text-xs sm:text-sm overflow-x-auto ltr">
+                        <div className={`mb-2 ${locale == "ar" ? "rtl" : "ltr"} `}>{algorithm_steps}</div>
                         <div className={`${currentStep >= 0 ? 'text-yellow-300' : 'text-gray-600'}`}>
                             1. target_entropy = entropy(target_column)
                         </div>

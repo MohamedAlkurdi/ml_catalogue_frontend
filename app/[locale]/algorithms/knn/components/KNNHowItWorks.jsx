@@ -321,7 +321,7 @@ const KNNHowItWorks = () => {
                 <div className="mt-6 sm:mt-8 btn-color p-4 sm:p-6 rounded-lg overflow-x-auto">
                     <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-secondary">{core_algorithm_steps}</h3>
                     <div className="bg-gray-900 text-green-400 p-3 sm:p-4 rounded font-mono text-xs sm:text-sm overflow-x-auto ltr">
-                        <div className="mb-2 rtl">{knn_algorithm}</div>
+                        <div className={`mb-2 ${locale == "ar" ? "rtl" : "ltr"}`}>{knn_algorithm}</div>
                         <div className={`${currentStep >= 1 ? 'text-yellow-300' : 'text-gray-600'}`}>1. distances = compute_distances(input_point, dataset)</div>
                         <div className={`${currentStep >= 2 ? 'text-yellow-300' : 'text-gray-600'}`}>2. distances.sort(key=lambda x: x["distance"])</div>
                         <div className={`${currentStep >= 3 ? 'text-yellow-300' : 'text-gray-600'}`}>3. k_neighbors = distances[:K]</div>

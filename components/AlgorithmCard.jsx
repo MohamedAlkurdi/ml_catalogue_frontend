@@ -23,9 +23,7 @@ export default function AlgorithmCard({ title, description, href, icon }) {
         <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-3 text-center">
           {title}
         </h3>
-        {/* <p className="text-slate-600 dark:text-slate-300 text-center leading-relaxed">
-          {description}
-        </p> */}
+
         <div className={`mt-6 flex items-center justify-center text-light font-semibold group-hover:translate-x-1 transition-transform duration-300`}>
           {explore_algorithm}
           {

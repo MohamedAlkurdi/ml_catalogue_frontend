@@ -431,7 +431,7 @@ const NaiveBayesHowItWorks = () => {
 
                         <div className="mt-6 bg-white rounded-lg p-6 shadow-md">
                             <h4 className="font-medium text-gray-700 mb-4 text-center">{calculation_breakdown}</h4>
-                            <div className="grid md:grid-cols-2 gap-6 text-sm">
+                            <div className="grid md:grid-cols-2 gap-6 text-sm ltr">
                                 <div className="space-y-2">
                                     <h5 className="font-semibold text-green-700">P(Yes | features):</h5>
                                     <div className="text-gray-600 font-mono">
@@ -463,7 +463,8 @@ const NaiveBayesHowItWorks = () => {
 
                             <div className="mt-4 text-center text-sm text-gray-600">
                                 <div className="bg-gray-100 rounded p-3">
-                                    <strong>{after_normalization}</strong>
+                                    <strong>{after_normalization}</strong> 
+                                    <span>  </span>
                                     <span className="ml-2">
                                         P(Yes) = {normalizedProbs.Yes}%, P(No) = {normalizedProbs.No}%
                                     </span>
